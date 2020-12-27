@@ -16,17 +16,22 @@ $mahasiswa = query("SELECT * FROM mahasiswa WHERE id = $id");
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
 </head>
 <body>
-  <h3>Detail Mahasiswa</h3>
-  <ul>
-    <li><img src="img/<?= $mahasiswa['gambar']; ?>" width="100"/></li>
-    <li>NIM : <?= $mahasiswa['nim']; ?></li>
-    <li>Nama : <?= $mahasiswa['nama']; ?></li>
-    <li>Email : <?= $mahasiswa['email']; ?></li>
-    <li>Jurusan : <?= $mahasiswa['jurusan']; ?></li>
-    <li><a href="">Ubah</a> | <a href="">Hapus</a></li>
-    <li><a href="latihan3.php">Kembali ke daftar mahasiswa</a></li>
-  </ul>
+  <div class="container">
+    <h3>Detail Mahasiswa</h3>
+    <ul>
+      <li><img src="img/<?= $mahasiswa['gambar']; ?>" width="100"/></li>
+      <li>NIM : <?= $mahasiswa['nim']; ?></li>
+      <li>Nama : <?= $mahasiswa['nama']; ?></li>
+      <li>Email : <?= $mahasiswa['email']; ?></li>
+      <li>Jurusan : <?= $mahasiswa['jurusan']; ?></li>
+      <li><a href="">Ubah</a> | <a href="">Hapus</a></li>
+      <li><a href="latihan3.php">Kembali ke daftar mahasiswa</a></li>
+    </ul>
+  </div>
 </body>
 </html>
